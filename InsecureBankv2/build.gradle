@@ -1,4 +1,17 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+plugins {
+  id "org.sonarqube" version "3.5.0.2730"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "ricsirigu_Android-InsecureBankv2"
+    property "sonar.organization", "ricsirigu"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
+
 buildscript {
     repositories {
         jcenter()
