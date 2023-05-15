@@ -18,17 +18,19 @@ plugins {
   id "org.sonarqube" version "3.5.0.2730"
 }
 
-sonarqube {
-  properties {
-    property "sonar.projectKey", "ricsirigu_Android-InsecureBankv2"
-    property "sonar.organization", "ricsirigu"
-    property "sonar.host.url", "https://sonarcloud.io"
-  }
-}
 
 allprojects {
     repositories {
         google()
         jcenter()
     }
+}
+
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "ricsirigu_Android-InsecureBankv2"
+    property "sonar.organization", "ricsirigu"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
